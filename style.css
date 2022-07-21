@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.backbutton{
+    width: 2%;
+    margin-left: 2rem;
+}
+
+.rpslogo{
+    width: 5%;
+    margin-left: 2rem;
+}
+
+.page-title {
+    margin-left: 2rem;
+    font-size: 24px;
+    font-family:"Roboto";
+    font-weight: bold;
+    text-decoration: none;
+    color:#F9B23D;
+    margin-bottom: 0;
+}
