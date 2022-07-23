@@ -59,12 +59,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: #C4C4C4;
+    background-color: #a0845c;
     border: none;
     margin: 2rem 0 0 0;
 }
 
-.gameimage {
+.gameimage, .refreshimg {
     width: 70%;
     margin: 1rem 0 1rem 0;
     position: relative;
@@ -73,12 +73,20 @@
     transition: 100ms;
 }
 
-.kertas{
+.kertasimg{
     width: 50%;
 }
 
-.gameimage:hover {
+.gameimage:hover, .refreshimg:hover {
     transform: scale(1.2);
+}
+
+.comimg{
+    cursor: default;
+}
+
+.comimg:hover {
+    transform: none;
 }
 
 .mid-announcement{
@@ -108,7 +116,7 @@
 }
 
 .vs-font {
-    font-size: 80px;
+    font-size: 56px;
     font-family:"Roboto";
     font-weight: bolder;
     text-decoration: none;
@@ -133,3 +141,34 @@
     z-index: 1;
     position: absolute;
 }
+
+.refresh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refreshbtn {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #a0845c;
+    border: none;
+    margin: 2rem 0 0 0;
+}
+
+div.hide{
+    opacity: 0;
+}
+
+div.appear{
+    opacity: 1;
+}
+
+div.changeBackgroundColor{
+    background-color: #C4C4C4
+}
+
