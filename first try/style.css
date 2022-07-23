@@ -33,6 +33,43 @@
     margin-bottom: 0;
 }
 
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-col {
+    margin-right: 8rem;
+}
+
+.left-col {
+    margin-left: 8rem;
+}
+
+.gameimage {
+    width: 30%;
+    margin: 2rem 0 2rem 0;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.gameimage:hover {
+    transform: scale(1.2);
+}
+
+.paper {
+    width: 25%;
+}
+
 .char-font {
     font-size: 24px;
     font-family:"Roboto";
@@ -41,47 +78,24 @@
     margin-bottom: 0;
 }
 
-.game-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.vs-font {
+    font-size: 80px;
+    font-family:"Roboto";
+    font-weight: bolder;
+    text-decoration: none;
+    color: #BD0000;
+    margin-bottom: 0;
+    z-index: 4;
+    position: absolute;
 }
 
-.selection {
-    width: 125px;
-    height: 125px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #C4C4C4;
-    border: none;
-    margin: 2rem 0 0 0;
+.choice-bg {
+    width: 40%;
+    position: absolute;
 }
 
-.gameimage {
-    width: 70%;
-    margin: 1rem 0 1rem 0;
-    position: relative;
-    z-index: 10;
-    cursor: pointer;
-    transition: 100ms;
-}
-
-.kertas{
-    width: 50%;
-}
-
-.gameimage:hover {
-    transform: scale(1.2);
-}
-
-.mid-announcement{
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.refresh-button {
+    width: 5%;
 }
 
 .result {
@@ -103,17 +117,6 @@
     transform: rotate(-28.87deg);
 }
 
-.vs-font {
-    font-size: 80px;
-    font-family:"Roboto";
-    font-weight: bolder;
-    text-decoration: none;
-    color: #BD0000;
-    margin-bottom: 0;
-    z-index: 4;
-    position: absolute;
-}
-
 .player-win{
     z-index: 3;
     position: absolute;
@@ -128,4 +131,13 @@
 .com-win{
     z-index: 1;
     position: absolute;
+}
+
+.refresh-button{
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.refresh-button:hover{
+    transform: scale(1.2);
 }

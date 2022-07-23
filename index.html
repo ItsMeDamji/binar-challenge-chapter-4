@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color:#a0845c ;">
     <div class="navbar">
@@ -14,76 +13,33 @@
         <img src="assets/RPS.png" class="rpslogo" alt="">
         <h2 class="page-title">ROCK PAPER SCISSOR</h2>
     </div>
-    <div class="container first-section border">
-        <div class="row first-row">
-            <div class="col nav-col border"></div>
-        </div>
-    </div>
-    <div class="container second-section border">
-        <div class="row second-row">
-            <div class="col left-col player-col border">
-                <h2 class="char-font">PLAYER 1</h2>
-            </div>
-            <div class="col result-col border">
-                <p>this box will be empty</p>
-            </div>
-            <div class="col right-col comp-col border">
-                <h2 class="char-font">COMP</h2>
+
+    <div class="game-section">
+
+        <div class="player-side">
+            <h2 class="char-font">PLAYER ONE</h2>
+            <div class="options">
+                <button class="selection" data-selection="Batu"><img src="assets/batu.png" class="gameimage" alt=""></button>
+                <button class="selection" data-selection="Kertas"><img src="assets/kertas.png" class="gameimage kertas" alt=""></button>
+                <button class="selection" data-selection="Gunting"><img src="assets/gunting.png" class="gameimage" alt=""></button>
             </div>
         </div>
-    </div>
-    <div class="container second-section border">
-        <div class="row second-row">
-            <div class="col left-col player-col border">
-                <img src="assets/batu.png" class="game-image" alt="">
-                <img src="assets/backgroundpickrectangle.png" class="choice-bg" alt="">
-            </div>
-            <div class="col result-col border">
-                <p>this box will be empty</p>
-            </div>
-            <div class="col right-col comp-col border">
-                <img src="assets/batu.png" class="game-image" alt="">
-                <img src="assets/backgroundpickrectangle.png" class="choice-bg" alt="">
-            </div>
+
+        <div class="mid-announcement">
+            <h2 class="vs-font">VS</h2>
+            <div class="result player-win">PLAYER WIN</div>
+            <div class="result draw">DRAW</div>
+            <div class="result com-win">COM WIN</div>
         </div>
-        <div class="row third-row">
-            <div class="col left-col player-col border">
-                <img src="assets/kertas.png" class="game-image paper" alt="">
-                <img src="assets/backgroundpickrectangle.png" class="choice-bg" alt="">
-            </div>
-            <div class="col result-col border">
-                <h2 class="vs-font">VS</h2>
-                <div class="result player-win">PLAYER WIN</div>
-                <div class="result draw">DRAW</div>
-                <div class="result com-win">COM WIN</div>
-            </div>
-            <div class="col right-col comp-col border">
-                <img src="assets/kertas.png" class="game-image paper" alt="">
-                <img src="assets/backgroundpickrectangle.png" class="choice-bg" alt="">
-            </div>
-        </div>
-        <div class="row fourth-row">
-            <div class="col left-col player-col border">
-                <img src="assets/gunting.png" class="game-image" alt="">
-                <img src="assets/backgroundpickrectangle.png" class="choice-bg" alt="">
-            </div>
-            <div class="col result-col border">
-                <p>this box will be empty</p>
-            </div>
-            <div class="col right-col comp-col border">
-                <img src="assets/gunting.png" class="game-image" alt="">
-                <img src="assets/backgroundpickrectangle.png" class="choice-bg" alt="">
+
+        <div class="com-side">
+            <h2 class="char-font">PLAYER ONE</h2>
+            <div class="options">
+                <button class="selection" data-selection="Batu"><img src="assets/batu.png" class="gameimage" alt=""></button>
+                <button class="selection" data-selection="Kertas"><img src="assets/kertas.png" class="gameimage kertas" alt=""></button>
+                <button class="selection" data-selection="Gunting"><img src="assets/gunting.png" class="gameimage" alt=""></button>
             </div>
         </div>
     </div>
-    <div class="container third-section border">
-        <div class="row fifth-row">
-            <div class="col refresh-col border">
-                <img src="assets/refresh.png" class="refresh-button" alt="">
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
