@@ -172,13 +172,25 @@ button{
 
 div.hide{
     opacity: 0;
+    transition: 200ms;
+    transform: scale(0.8);
 }
 
 div.appear{
     opacity: 1;
+    transition: 200ms;
+    transform: scale(1);
 }
 
 div.changeColor{
-    background-color: #C4C4C4
+    background-color: #C4C4C4;
+}
+
+div.disable{
+    cursor: default;
+}
+
+div.disable:hover{
+    transform: none;
 }
 
