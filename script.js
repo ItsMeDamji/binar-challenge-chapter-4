@@ -1,7 +1,7 @@
 // const batuPlayer = document.querySelector(".batuPlayer");
 // const guntingPlayer = document.querySelector(".guntingPlayer");
 // const kertasPlayer = document.querySelector(".kertasPlayer");
-const gameImg = document.querySelector(".gameimage");
+// const gameImg = document.querySelector(".gameimage");
 const btnBatu = document.querySelector(".batu");
 const btnKertas = document.querySelector(".kertas");
 const btnGunting = document.querySelector(".gunting");
@@ -15,7 +15,7 @@ const comWin = document.querySelector(".com-win");
 const draw = document.querySelector(".draw");
 
 
-// starting conditions
+// starting
 playerWin.classList.add("hide");
 comWin.classList.add("hide");
 draw.classList.add("hide");
@@ -23,62 +23,56 @@ draw.classList.add("hide");
 // game logic
 // btn batu
 btnBatu.addEventListener("click", function(){
-    // whys my disable not working?
+    // why's my disable not working?
     // batuPlayer.disabled = true;
     // guntingPlayer.disabled = true;
     // kertasPlayer.disabled = true;
 
     btnBatu.classList.add("changeColor");
     versusAnc.classList.add("hide");
-    const comPick = Math.floor(Math.random() * 3)+1;
+    const comPick = Math.floor(Math.random() * 3);
     console.log(comPick)
-    if (comPick === 1) {
+    if (comPick === 0) {
         btnBatuCom.classList.add("changeColor");
         draw.classList.remove("hide");
-    } else if (comPick === 2) {
+    } else if (comPick === 1) {
         btnKertasCom.classList.add("changeColor");
         comWin.classList.remove("hide");
-    } else if (comPick === 3) {
+    } else if (comPick === 2) {
         btnGuntingCom.classList.add("changeColor");
         playerWin.classList.remove("hide");
     }
 });
 // btn gunting
 btnGunting.addEventListener("click", function(){
-    btnBatu.disabled = "true";
-    btnKertas.disabled = "true";
-    btnGunting.disabled = "true";
     btnGunting.classList.add("changeColor");
     versusAnc.classList.add("hide");
-    const comPick = Math.floor(Math.random() * 3)+1;
+    const comPick = Math.floor(Math.random() * 3);
     console.log(comPick)
-    if (comPick === 1) {
+    if (comPick === 0) {
         btnBatuCom.classList.add("changeColor");
         comWin.classList.remove("hide");
-    } else if (comPick === 2) {
+    } else if (comPick === 1) {
         btnKertasCom.classList.add("changeColor");
         playerWin.classList.remove("hide");
-    } else if (comPick === 3) {
+    } else if (comPick === 2) {
         btnGuntingCom.classList.add("changeColor");
         draw.classList.remove("hide");
     }
 });
 // btn kertas
 btnKertas.addEventListener("click", function(){
-    btnBatu.disabled = "true";
-    btnKertas.disabled = "true";
-    btnGunting.disabled = "true";
     btnKertas.classList.add("changeColor");
     versusAnc.classList.add("hide");
-    const comPick = Math.floor(Math.random() * 3)+1;
+    const comPick = Math.floor(Math.random() * 3);
     console.log(comPick)
-    if (comPick === 1) {
+    if (comPick === 0) {
         btnBatuCom.classList.add("changeColor");
         playerWin.classList.remove("hide");
-    } else if (comPick === 2) {
+    } else if (comPick === 1) {
         btnKertasCom.classList.add("changeColor");
         draw.classList.remove("hide");
-    } else if (comPick === 3) {
+    } else if (comPick === 2) {
         btnGuntingCom.classList.add("changeColor");
         comWin.classList.remove("hide");
     }

@@ -37,6 +37,7 @@ playerBtns.forEach(playerBtn => {
         const computerNumber = Math.floor(Math.random() * 3);
         const computerChoice = computerOptions[computerNumber];
         console.log(computerChoice)
+    // game logic
     })
 })
 
