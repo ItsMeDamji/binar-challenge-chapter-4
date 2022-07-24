@@ -19,7 +19,7 @@ const draw = document.querySelector(".draw");
 playerWin.classList.add("hide");
 comWin.classList.add("hide");
 draw.classList.add("hide");
-btnBatu.classList.add("disable")
+
 // game logic
 // btn batu
 btnBatu.addEventListener("click", function(){
@@ -27,6 +27,7 @@ btnBatu.addEventListener("click", function(){
     // batuPlayer.disabled = true;
     // guntingPlayer.disabled = true;
     // kertasPlayer.disabled = true;
+
     btnBatu.classList.add("changeColor");
     versusAnc.classList.add("hide");
     const comPick = Math.floor(Math.random() * 3)+1;
